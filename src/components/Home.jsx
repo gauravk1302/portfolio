@@ -16,6 +16,8 @@ export default function Home() {
     return () => clearInterval(timer);
   }, []);
 
+  
+
   return (
     <section className="min-h-[80vh] flex items-center px-6">
       <div className="max-w-7xl mx-auto w-full grid grid-cols-1 md:grid-cols-2 items-center gap-16">
@@ -29,7 +31,7 @@ export default function Home() {
             damping: 18,
           }}
         >
-          <p className="text-sm uppercase tracking-widest text-gray-500 mb-4">
+          <p className=" mt-3 text-sm uppercase tracking-widest text-gray-500 mb-4">
             Welcome to my portfolio
           </p>
 
@@ -81,5 +83,6 @@ export default function Home() {
         </motion.div>
       </div>
     </section>
+    
   );
 }
